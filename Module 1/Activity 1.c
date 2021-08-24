@@ -37,7 +37,7 @@ void ModuleOneExercise3() {
     }
 }
 
-void ModuleOneExercise4() {
+void ModuleOneAssignment1() {
     int i, limitArray, sumArray = 0;
     int arrayExample[128];
 
@@ -70,6 +70,6 @@ int main() {
     //ModuleOneExercise1();
     //ModuleOneExercise2();
     //ModuleOneExercise3();
-    ModuleOneExercise4();
+    ModuleOneAssignment1();
     return 0;
 }

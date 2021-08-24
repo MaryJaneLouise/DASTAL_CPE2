@@ -56,14 +56,14 @@ void ModuleOneExercise4() {
     }
     for (i = 0; i < limitArray; i++) {
         printf("%d", arrayExample[i]);
-        if (limitArray * 2 - i > 0) {
+        if (limitArray - i > 1) {
             printf(" + ");
         }
         else {
             printf(" = ");
         }
-
     }
+    printf("%d", sumArray);
     printf("\nThe sum of the array is %d.", sumArray);
 }
 int main() {

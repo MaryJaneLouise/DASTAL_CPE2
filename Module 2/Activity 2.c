@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void ModuleTwoExampleOne() {
+void ModuleTwoActivityTwo() {
     int i, j;
     int tempArray, numArray, insertArray, arrayEx[128];
     printf("Enter the number of elements to be entered in the array: ");
@@ -34,11 +34,9 @@ void ModuleTwoExampleOne() {
     for (i = 0; i <= numArray; i++) {
         printf("\nElement [%d] = %d", i, arrayEx[i]);
     }
-
-
 }
 
 int main() {
-    ModuleTwoExampleOne();
+    ModuleTwoActivityTwo();
     return 0;
 }

@@ -16,6 +16,7 @@ void ModuleOneActivityFour() {
     }
 
     j = i;
+
     printf("\nEnter the number of elements to be entered in the second array: ");
     scanf("%d", &numSecondArray);
 

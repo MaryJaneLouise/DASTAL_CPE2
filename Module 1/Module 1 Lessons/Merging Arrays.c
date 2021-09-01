@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 void ModuleOneMergArr() {
-    int i, j;
+    int i, j, k;
     int tempArray, numFirstArray, numSecondArray, arrayFirst[128], arraySecond[128], finalArray[128];
     printf("Enter the number of elements to be entered in the first array: ");
     scanf("%d", &numFirstArray);
@@ -26,7 +26,21 @@ void ModuleOneMergArr() {
         j++;
     }
 
-    printf("\nResult of the merging two arrays:\n");
+    printf("\nResult of the unsorted merged arrays:\n");
+    for (i = 0; i < j; i++) {
+        printf("Element [%d] = %d\n", i, finalArray[i]);
+    }
+
+    for (i = 0; i < (numFirstArray + numSecondArray); i++) {
+        for (k = i + 1; k < (numFirstArray + numSecondArray); k++) {
+            if (finalArray[i] > finalArray[k]) {
+                tempArray = finalArray[i];
+                finalArray[i] = finalArray[k];
+                finalArray[k] = tempArray;
+            }
+        }
+    }
+    printf("\nResult of the sorted merged arrays:\n");
     for (i = 0; i < j; i++) {
         printf("Element [%d] = %d\n", i, finalArray[i]);
     }

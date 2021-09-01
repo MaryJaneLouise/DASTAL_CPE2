@@ -9,4 +9,4 @@ add_executable(Mod1Activity_2 "Module 1/Activity 2.c")
 add_executable(Mod1Activity_3 "Module 1/Activity 3.c")
 add_executable(Mod1Activity_4 "Module 1/Activity 4.c")
 
-add_executable(Module1MergArr "Module 1 Lessons/Merging Arrays.c")
+add_executable(Module1MergArr "Module 1/Module 1 Lessons/Merging Arrays.c")

@@ -41,9 +41,32 @@ void LoopsAndPointersEx3() {
     }
 }
 
+void LoopsAndPointersEx4() {
+    int i;
+    int arrayEx[128], *pointerArray, limitArray;
+
+    printf("Enter the number of elements to be entered in the array: ");
+    scanf("%d", &limitArray);
+
+    printf("\nEnter the elements:\n");
+    for (i = 0; i < limitArray; i++) {
+        printf("Original Array | Element [%d] = ", i);
+        scanf("%d", &arrayEx[i]);
+    }
+
+    pointerArray = arrayEx;
+
+    printf("\nThe elements found at the pointer is:");
+    for (i = 0; i < limitArray; i++) {
+        printf("\nPointer Array | Element [%d] = %d", i, *pointerArray);
+        pointerArray++;
+    }
+}
+
 int main() {
     //LoopsAndPointersEx1();
     //LoopsAndPointersEx2();
-    LoopsAndPointersEx3();
+    //LoopsAndPointersEx3();
+    LoopsAndPointersEx4();
     return 0;
 }

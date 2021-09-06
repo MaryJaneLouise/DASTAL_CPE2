@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void ModuleTwoActivityOne() {
-    int arrayEx[7] = {1, 2, 3, 4, 5, 6, 8};
+    int arrayEx[7] = {1, 2, 3, 4, 5, 6, 7};
     int *pointerArray;
     int i;
 

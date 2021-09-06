@@ -28,7 +28,6 @@ void LoopsAndPointersEx2() {
 }
 
 void LoopsAndPointersEx3() {
-    int i;
     int *pointerArrayOne, *pointerArrayTwo;
     int arrayEx[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 

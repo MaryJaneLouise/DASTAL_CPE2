@@ -41,7 +41,7 @@ void LoopsAndPointersEx3() {
     }
 }
 
-void LoopsAndPointersEx4() {
+void LoopsAndPointersPracticeAct1() {
     int i;
     int arrayEx[128], *pointerArray, limitArray;
 
@@ -67,6 +67,6 @@ int main() {
     //LoopsAndPointersEx1();
     //LoopsAndPointersEx2();
     //LoopsAndPointersEx3();
-    LoopsAndPointersEx4();
+    //LoopsAndPointersPracticeAct1();
     return 0;
 }

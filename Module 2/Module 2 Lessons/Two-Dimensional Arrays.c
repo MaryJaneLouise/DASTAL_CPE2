@@ -37,7 +37,7 @@ void TwoDimensionalArraysEx2() {
     for (i = 0; i < rowArray; i++) {
         for (j = 0; j < columnArray; j++) {
             printf("%d\t", arrayEx[i][j]);
-            if (j == rowArray) {
+            if (j == rowArray - 1) {
                 printf("\n");
             }
         }

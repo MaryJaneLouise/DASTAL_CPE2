@@ -128,7 +128,7 @@ void TwoDimensionalArraysEx3() {
 }
 
 void TwoDimensionalArraysEx4() {
-
+    //Pascal's triangle 2D array version
     int i, j;
     int rowPascal, pascalArray[128][128];
 

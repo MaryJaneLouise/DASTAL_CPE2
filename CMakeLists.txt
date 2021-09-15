@@ -12,6 +12,7 @@ add_executable(Module1MergingArrays "Module 1/Module 1 Lessons/Merging Arrays.c"
 
 add_executable(Mod2Activity_1 "Module 2/Activity 1.c")
 add_executable(Mod2Activity_2 "Module 2/Activity 2.c")
+add_executable(Mod2Activity_3 "Module 2/Activity 3.c")
 
 add_executable(Module2LoopsAndPointers "Module 2/Module 2 Lessons/Loops and Pointers.c")
 add_executable(Module2TwoDimensionalArrays "Module 2/Module 2 Lessons/Two-Dimensional Arrays.c")

@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
+void main();
 
 void Module2ExerciseOne() {
     int i, j;
@@ -179,6 +181,7 @@ void Module2ExerciseOne() {
             break;
 
         case 3:
+
             printf("Enter the number of rows for the two matrices: ");
             scanf("%d", &rowMatrix);
 
@@ -383,33 +386,34 @@ void Module2ExerciseOne() {
     }
 }
 
-void optionGoBack(int goBack) {
+void optionGoBack() {
+    bool exit = true;
+    int goBack = 0;
     printf("\n\nDo you want to try again?"
            "\n1 - Yes"
            "\n2 - No"
            "\nAnswer: ");
     scanf("%d", &goBack);
-    if (goBack == 1) {
-        printf("\n\n");
-        Module2ExerciseOne();
+
+
+    while (exit != false) {
+        if (goBack == 1) {
+            printf("\n\n");
+            main();
+        }
+        else if (goBack == 2) {
+            printf("The program is closing. Good day!");
+            exit = false;
+        }
+        else {
+            printf("You entered a number that was not in the options. Still, the program will close. Good day.");
+            exit = true;
+        }
     }
-    else if (goBack == 2) {
-        printf("The program is closing. Good day!");
-    }
-    else {
-        printf("You entered a number that was not in the options. Still, the program will close. Good day.");
-    }
+
 }
 
-int main() {
+void main() {
     Module2ExerciseOne();
-
-    int goBack;
-    printf("\n\nDo you want to try again?"
-           "\n1 - Yes"
-           "\n2 - No"
-           "\nAnswer: ");
-    scanf("%d", &goBack);
-    optionGoBack(goBack);
-    return 0;
+    optionGoBack();
 }

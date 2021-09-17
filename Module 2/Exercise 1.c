@@ -21,7 +21,6 @@ void Module2ExerciseOne() {
     printf("\n");
 
     //Choices
-
     switch (option) {
         case 1:
             printf("\nRead and displaying a n x n matrix\n");
@@ -181,7 +180,7 @@ void Module2ExerciseOne() {
             break;
 
         case 3:
-
+            printf("\nSum of Two Matrices\n");
             printf("Enter the number of rows for the two matrices: ");
             scanf("%d", &rowMatrix);
 
@@ -392,25 +391,21 @@ void optionGoBack() {
     printf("\n\nDo you want to try again?"
            "\n1 - Yes"
            "\n2 - No"
+           "\nTake note that the program will exit if ever you picked other numbers."
            "\nAnswer: ");
     scanf("%d", &goBack);
 
-
-    while (exit != false) {
+    while (exit) {
         if (goBack == 1) {
             printf("\n\n");
             main();
+            goBack = 0;
         }
-        else if (goBack == 2) {
+        else if (goBack >= 2 || goBack < 1) {
             printf("The program is closing. Good day!");
             exit = false;
         }
-        else {
-            printf("You entered a number that was not in the options. Still, the program will close. Good day.");
-            exit = true;
-        }
     }
-
 }
 
 void main() {

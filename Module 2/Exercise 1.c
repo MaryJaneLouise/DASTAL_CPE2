@@ -178,17 +178,219 @@ void Module2ExerciseOne() {
             }
             break;
 
+        case 3:
+            printf("Enter the number of rows for the two matrices: ");
+            scanf("%d", &rowMatrix);
+
+            printf("Enter the number of columns for the two matrices: ");
+            scanf("%d", &columnMatrix);
+
+            if (rowMatrix <= 0 || columnMatrix <= 0) {
+                if (rowMatrix == 0) {
+                    printf("\nResult:\nYou know that you cannot print empty rows right?");
+                }
+                else if (rowMatrix < 0) {
+                    printf("\nResult:\nYou know that you cannot print negative rows right?");
+                }
+                else if (columnMatrix == 0) {
+                    printf("\nResult:\nYou know that you cannot print empty column right?");
+                }
+                else if (columnMatrix < 0) {
+                    printf("\nResult:\nYou know that you cannot print negative rows right?");
+                }
+
+            }
+            else {
+                printf("\nEnter the elements for the First Matrix:\n");
+                for (i = 0; i < rowMatrix; i++) {
+                    for (j = 0; j < columnMatrix; j++) {
+                        printf("First Matrix | Element [%d][%d] = ", i, j);
+                        scanf("%d", &matrixOne[i][j]);
+                    }
+                }
+
+                printf("\nEnter the elements for the Second Matrix:\n");
+                for (i = 0; i < rowMatrix; i++) {
+                    for (j = 0; j < columnMatrix; j++) {
+                        printf("Second Matrix | Element [%d][%d] = ", i, j);
+                        scanf("%d", &matrixTwo[i][j]);
+                    }
+                }
+
+                printf("\nFirst Matrix:\n");
+                for (i = 0; i < rowMatrix; i++) {
+                    for (j = 0; j < columnMatrix; j++) {
+                        printf("%d\t", matrixOne[i][j]);
+                        if (rowMatrix > columnMatrix) {
+                            if (rowMatrix - columnMatrix == 1) {
+                                if (j == rowMatrix - 2) {
+                                    printf("\n");
+                                }
+                            }
+                            else if (rowMatrix - columnMatrix == 2) {
+                                if (j == rowMatrix - 3) {
+                                    printf("\n");
+                                }
+                            }
+                        }
+                        else if (rowMatrix == columnMatrix) {
+                            if (j == rowMatrix - 1) {
+                                printf("\n");
+                            }
+                        }
+                        else if (rowMatrix < columnMatrix){
+                            if (columnMatrix - rowMatrix == 1) {
+                                if (j == rowMatrix) {
+                                    printf("\n");
+                                }
+                            }
+                            else if (columnMatrix - rowMatrix == 2) {
+                                if (j == rowMatrix + 1) {
+                                    printf("\n");
+                                }
+                            }
+                        }
+                    }
+                }
+
+                printf("\nSecond Matrix:\n");
+                for (i = 0; i < rowMatrix; i++) {
+                    for (j = 0; j < columnMatrix; j++) {
+                        printf("%d\t", matrixTwo[i][j]);
+                        if (rowMatrix > columnMatrix) {
+                            if (rowMatrix - columnMatrix == 1) {
+                                if (j == rowMatrix - 2) {
+                                    printf("\n");
+                                }
+                            }
+                            else if (rowMatrix - columnMatrix == 2) {
+                                if (j == rowMatrix - 3) {
+                                    printf("\n");
+                                }
+                            }
+                        }
+                        else if (rowMatrix == columnMatrix) {
+                            if (j == rowMatrix - 1) {
+                                printf("\n");
+                            }
+                        }
+                        else if (rowMatrix < columnMatrix){
+                            if (columnMatrix - rowMatrix == 1) {
+                                if (j == rowMatrix) {
+                                    printf("\n");
+                                }
+                            }
+                            else if (columnMatrix - rowMatrix == 2) {
+                                if (j == rowMatrix + 1) {
+                                    printf("\n");
+                                }
+                            }
+                        }
+                    }
+                }
+
+                printf("\nSolution:\n");
+                for (i = 0; i < rowMatrix; i++) {
+                    for (j = 0; j < columnMatrix; j++) {
+                        printf("(%d + %d)\t", matrixOne[i][j], matrixTwo[i][j]);
+                        if (rowMatrix > columnMatrix) {
+                            if (rowMatrix - columnMatrix == 1) {
+                                if (j == rowMatrix - 2) {
+                                    printf("\n");
+                                }
+                            }
+                            else if (rowMatrix - columnMatrix == 2) {
+                                if (j == rowMatrix - 3) {
+                                    printf("\n");
+                                }
+                            }
+                        }
+                        else if (rowMatrix == columnMatrix) {
+                            if (j == rowMatrix - 1) {
+                                printf("\n");
+                            }
+                        }
+                        else if (rowMatrix < columnMatrix){
+                            if (columnMatrix - rowMatrix == 1) {
+                                if (j == rowMatrix) {
+                                    printf("\n");
+                                }
+                            }
+                            else if (columnMatrix - rowMatrix == 2) {
+                                if (j == rowMatrix + 1) {
+                                    printf("\n");
+                                }
+                            }
+                        }
+                    }
+                }
+
+                printf("\nResult(Matrices): \n");
+                for (i = 0; i < rowMatrix; i++) {
+                    for (j = 0; j < columnMatrix; j++) {
+                        matrixSumPerMatrix[i][j] = matrixOne[i][j] + matrixTwo[i][j];
+                    }
+                }
+                for (i = 0; i < rowMatrix; i++) {
+                    for (j = 0; j < columnMatrix; j++) {
+                        printf("%d\t", matrixSumPerMatrix[i][j]);
+                        if (rowMatrix > columnMatrix) {
+                            if (rowMatrix - columnMatrix == 1) {
+                                if (j == rowMatrix - 2) {
+                                    printf("\n");
+                                }
+                            }
+                            else if (rowMatrix - columnMatrix == 2) {
+                                if (j == rowMatrix - 3) {
+                                    printf("\n");
+                                }
+                            }
+                        }
+                        else if (rowMatrix == columnMatrix) {
+                            if (j == rowMatrix - 1) {
+                                printf("\n");
+                            }
+                        }
+                        else if (rowMatrix < columnMatrix){
+                            if (columnMatrix - rowMatrix == 1) {
+                                if (j == rowMatrix) {
+                                    printf("\n");
+                                }
+                            }
+                            else if (columnMatrix - rowMatrix == 2) {
+                                if (j == rowMatrix + 1) {
+                                    printf("\n");
+                                }
+                            }
+                        }
+                    }
+                }
+
+                printf("\nResult(Total): ");
+                for (i = 0; i < rowMatrix; i++) {
+                    for (j = 0; j < columnMatrix; j++) {
+                        matrixTotal = matrixTotal + matrixSumPerMatrix[i][j];
+                    }
+                }
+                printf("%d\n", matrixTotal);
+            }
+            break;
+
+        default:
+            printf("You entered a number that is not on the list of options. "
+                   "Fortunately, you have still a chance to restart the program.\n");
+            break;
     }
 }
 
-int main() {
-    int goBack;
-    Module2ExerciseOne();
-    printf("\nDo you want to try again?"
+void optionGoBack(int goBack) {
+    printf("\n\nDo you want to try again?"
            "\n1 - Yes"
-           "\n2 - No");
+           "\n2 - No"
+           "\nAnswer: ");
     scanf("%d", &goBack);
     if (goBack == 1) {
+        printf("\n\n");
         Module2ExerciseOne();
     }
     else if (goBack == 2) {
@@ -197,5 +399,17 @@ int main() {
     else {
         printf("You entered a number that was not in the options. Still, the program will close. Good day.");
     }
+}
+
+int main() {
+    Module2ExerciseOne();
+
+    int goBack;
+    printf("\n\nDo you want to try again?"
+           "\n1 - Yes"
+           "\n2 - No"
+           "\nAnswer: ");
+    scanf("%d", &goBack);
+    optionGoBack(goBack);
     return 0;
 }

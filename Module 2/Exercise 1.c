@@ -389,8 +389,8 @@ void optionGoBack() {
     bool exit = true;
     int goBack = 0;
     printf("\n\nDo you want to try again?"
-           "\n1 - Yes"
-           "\n2 - No"
+           "\n1 - Yes, I still want to try another set of numbers."
+           "\n2 - No, exit the program."
            "\nTake note that the program will exit if ever you picked other numbers."
            "\nAnswer: ");
     scanf("%d", &goBack);
@@ -402,7 +402,7 @@ void optionGoBack() {
             goBack = 0;
         }
         else if (goBack >= 2 || goBack < 1) {
-            printf("The program is closing. Good day!");
+            printf("");
             exit = false;
         }
     }

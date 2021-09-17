@@ -195,7 +195,7 @@ int main() {
         printf("The program is closing. Good day!");
     }
     else {
-        printf("You entered a number that was not in the options. Still, the program will close. Good day.")
+        printf("You entered a number that was not in the options. Still, the program will close. Good day.");
     }
     return 0;
 }

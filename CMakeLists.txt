@@ -8,11 +8,10 @@ add_executable(Mod1Activity_2 "Module 1/Activity 2.c")
 add_executable(Mod1Activity_3 "Module 1/Activity 3.c")
 add_executable(Mod1Activity_4 "Module 1/Activity 4.c")
 
-add_executable(Module1MergingArrays "Practice Programs/Arrays/Merging Arrays.c")
-
 add_executable(Mod2Activity_1 "Module 2/Activity 1.c")
 add_executable(Mod2Activity_2 "Module 2/Activity 2.c")
 add_executable(Mod2Exercise_1 "Module 2/Exercise 1.c")
 
-add_executable(Module2LoopsAndPointers "Practice Programs/Arrays/Loops and Pointers.c")
-add_executable(Module2TwoDimensionalArrays "Practice Programs/Arrays/Two-Dimensional Arrays.c")
+add_executable(MergingArrays "Practice Programs/Arrays/Merging Arrays.c")
+add_executable(LoopsAndPointers "Practice Programs/Arrays/Loops and Pointers.c")
+add_executable(TwoDimensionalArrays "Practice Programs/Arrays/Two-Dimensional Arrays.c")

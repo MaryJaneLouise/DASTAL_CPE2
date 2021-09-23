@@ -12,6 +12,12 @@ add_executable(Mod2Activity_1 "Module 2/Activity 1.c")
 add_executable(Mod2Activity_2 "Module 2/Activity 2.c")
 add_executable(Mod2Exercise_1 "Module 2/Exercise 1.c")
 
+add_executable(Mod3Activity_1 "Module 3/Activity 1.c")
+
 add_executable(MergingArrays "Practice Programs/Arrays/Merging Arrays.c")
 add_executable(LoopsAndPointers "Practice Programs/Arrays/Loops and Pointers.c")
 add_executable(TwoDimensionalArrays "Practice Programs/Arrays/Two-Dimensional Arrays.c")
+
+add_executable(LinkedList "Practice Programs/Linked List/Linked List.c")
+
+add_executable(StringManipulation "Practice Programs/Strings/String Manipulation.c")

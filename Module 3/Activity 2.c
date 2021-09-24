@@ -8,7 +8,7 @@ struct node {
     struct node *prevPointer;
     int data;
     struct node *nextPointer;
-}*head, *tempNode1, *tempNode2, *tempNode3, *tempNode4;
+}*head, *tempNode1, *tempNode2, *tempNode3;
 
 int incrementNode = 0;
 

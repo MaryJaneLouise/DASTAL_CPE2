@@ -24,5 +24,3 @@ add_executable(SingleLinkedList "Practice Programs/Linked List/Single Linked Lis
 add_executable(DoublyLinkedList "Practice Programs/Linked List/Doubly Linked List.c")
 
 add_executable(StringManipulation "Practice Programs/Strings/String Manipulation.c")
-
-add_executable(juju "Practice Programs/try/juju.c")

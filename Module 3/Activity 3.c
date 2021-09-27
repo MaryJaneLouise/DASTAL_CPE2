@@ -49,7 +49,7 @@ void deleteAtBeginning() {
     struct node *deletePointer;
 
     if (head == NULL) {
-        printf("\nThe linked list is empty.");
+        printf("\nThe linked list is empty.\n");
         incrementNode = 0;
     }
 
@@ -74,14 +74,14 @@ void deleteAtEnd() {
     struct node *deletePointer;
 
     if (head == NULL) {
-        printf("\nThe linked list is empty.");
+        printf("\nThe linked list is empty.\n");
         incrementNode = 0;
     }
 
     else if (head -> nextPointer == NULL) {
         head = NULL;
         free(head);
-        printf("\nThe selected node was deleted.");
+        printf("\nThe selected node was deleted.\n");
     }
 
     else {
@@ -111,7 +111,7 @@ void deleteAtAPosition() {
     }
 
     else if (head == NULL) {
-        printf("\nThe linked list is empty.");
+        printf("\nThe linked list is empty.\n");
         incrementNode = 0;
     }
 
@@ -162,7 +162,7 @@ void showNode() {
         main();
     }
 
-    printf("\nThere are %d elements in the list:\n", incrementNode);
+    printf("There are %d elements in the list:\n", incrementNode);
 
     while (tempNode3 -> nextPointer != NULL) {
         printf("• Node %d\n", tempNode3 -> data);

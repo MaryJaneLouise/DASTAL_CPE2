@@ -37,7 +37,7 @@ int main() {
     char expressionConvert[100];
     char *pointerStack, tempStack;
 
-    printf("Enter the expression that you want to convert: ");
+    printf("Infix to PostFix\nEnter the expression that you want to convert: ");
     scanf("%s",expressionConvert);
     printf("\n");
     pointerStack = expressionConvert;

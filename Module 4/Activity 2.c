@@ -4,7 +4,7 @@
 float expressionConverted[128];
 int top = -1;
 
-void push(int tempStack) {
+void push(float tempStack) {
     expressionConverted[++top] = tempStack;
 }
 

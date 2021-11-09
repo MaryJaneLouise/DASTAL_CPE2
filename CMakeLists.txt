@@ -20,6 +20,7 @@ add_executable(Mod4Activity_1 "Module 4/Activity 1.c")
 add_executable(Mod4Activity_2 "Module 4/Activity 2.c")
 
 add_executable(Mod5Activity_2 "Module 5/Activity 2.c")
+add_executable(Mod5Activity_3 "Module 5/Activity 3.c")
 
 add_executable(MergingArrays "Practice Programs/Arrays/Merging Arrays.c")
 add_executable(LoopsAndPointers "Practice Programs/Arrays/Loops and Pointers.c")

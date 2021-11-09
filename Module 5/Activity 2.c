@@ -5,7 +5,6 @@
 int frontQueue = -1, rearQueue = -1;
 int initiateQueue[maxSizeQueue];
 
-
 void insertElements() {
     int insertItem;
     printf("\nInserting element at the queue\n");

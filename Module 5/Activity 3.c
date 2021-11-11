@@ -2,30 +2,29 @@
 #include <stdio.h>
 #include <string.h>
 
-void factorialNumber() {
+float factorialFormula(int inputNumber) {
+
+    if (inputNumber < 0) {
+        printf("\nTry another number. You entered a negative number");
+    }
+    else {
+        if (inputNumber >= 1) {
+            return inputNumber * factorialFormula(inputNumber - 1);
+        }
+        else {
+            return 1;
+        }
+    }
+
+
+}
+int factorialNumber() {
     int inputNumber;
-    double i, factorialResult = 1;
     printf("Enter the number you want to be solved using factorial: ");
     scanf("%d", &inputNumber);
 
-    if (inputNumber < 0) {
-        printf("\nTry another number.");
-    }
-    else {
-        if (inputNumber >= 0 && inputNumber <= 170) {
-            for (i = 1; i <= inputNumber; i++) {
-                factorialResult = factorialResult * i;
-            }
-            printf("Result = %0.0lf\n", factorialResult);
-        }
-        else if (inputNumber > 170) {
-            printf("Unfortunately, the program will likely to print 'inf', which means it has reached its limit.\n");
-            for (i = 1; i <= inputNumber; i++) {
-                factorialResult = factorialResult * i;
-            }
-            printf("Result = %0.0lf\n", factorialResult);
-        }
-    }
+    printf("If the program printed 'inf', it means to say that it has reached its limit.\n");
+    printf("Result = %0.0lf\n", factorialFormula(inputNumber));
 }
 
 int main() {
@@ -55,5 +54,4 @@ int main() {
                 return 0;
         }
     }
-
 }

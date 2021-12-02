@@ -86,10 +86,10 @@ void binaryTree() {
         insertNode(arrayNode[i]);
     }
 
-    printf("\nPreorder traversal: ");
+    printf("\nPre-order traversal: ");
     preOrderTraversal(root);
 
-    printf("\nPost order traversal: ");
+    printf("\nPost-order traversal: ");
     postOrderTraversal(root);
 
     printf("\nInorder traversal: ");

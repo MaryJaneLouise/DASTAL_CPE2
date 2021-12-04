@@ -56,7 +56,7 @@ int main() {
     };
     int n = sizeof(edges)/sizeof(edges[0]);
     struct storeGraph *graph = createGraph(edges, n);
-    printf("Note: A = 0, B = 1...\n\nDirected Graph:\n");
+    printf("Note: A = 0, B = 1...\n\nDirected Graph using adjacency list:\n");
     printGraph(graph);
 
     return 0;

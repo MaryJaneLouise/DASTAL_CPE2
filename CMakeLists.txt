@@ -39,3 +39,4 @@ add_executable(InfixToPrefix "Practice Programs/Stacks/InfixToPrefix.c")
 add_executable(InfixToPrefix2 "Practice Programs/try/testProgram.c")
 
 add_executable(test "Practice Programs/try/uge.c")
+add_executable(testi "Practice Programs/try/testProgram.c")
